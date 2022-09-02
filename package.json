@@ -1,0 +1,31 @@
+{
+  "name": "ldkit-comunica",
+  "version": "0.0.1",
+  "description": "LDKit-compatible Comunica query engine build",
+  "module": "./esm/comunica.js",
+  "types": "./esm/comunica.d.ts",
+  "exports": {
+    ".": {
+      "import": "./esm/comunica.js"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.js && tsc"
+  },
+  "keywords": [
+    "ldkit",
+    "comunica",
+    "rdf",
+    "linked",
+    "data",
+    "sparql"
+  ],
+  "author": "Karel Klíma",
+  "license": "MIT",
+  "devDependencies": {
+    "@comunica/query-sparql": "^2.4.2",
+    "@comunica/types": "^2.4.0",
+    "esbuild": "^0.15.6",
+    "typescript": "^4.8.2"
+  }
+}
